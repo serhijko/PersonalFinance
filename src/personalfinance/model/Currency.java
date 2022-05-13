@@ -17,21 +17,21 @@ public class Currency extends Common {
     private String title;
     private String code;
     private double rate;
-    private boolean isOn;
-    private boolean isBase;
+    private boolean on;
+    private boolean base;
 
     public Currency() {
     }
 
-    public Currency(String title, String code, double rate, boolean isOn, boolean isBase) throws ModelException {
+    public Currency(String title, String code, double rate, boolean on, boolean base) throws ModelException {
         if (title.length() == 0) throw new ModelException(ModelException.TITLE_EMPTY);
         if (code.length() == 0) throw new ModelException(ModelException.CODE_EMPTY);
         if (rate <= 0) throw new ModelException(ModelException.RATE_INCORRECT);
         this.title = title;
         this.code = code;
         this.rate = rate;
-        this.isOn = isOn;
-        this.isBase = isBase;
+        this.on = on;
+        this.base = base;
     }
 
     public String getTitle() {
@@ -58,25 +58,25 @@ public class Currency extends Common {
         this.rate = rate;
     }
 
-    public boolean isIsOn() {
-        return isOn;
+    public boolean isOn() {
+        return on;
     }
 
-    public void setIsOn(boolean isOn) {
-        this.isOn = isOn;
+    public void setOn(boolean on) {
+        this.on = on;
     }
 
-    public boolean isIsBase() {
-        return isBase;
+    public boolean isBase() {
+        return base;
     }
 
-    public void setIsBase(boolean isBase) {
-        this.isBase = isBase;
+    public void setBase(boolean base) {
+        this.base = base;
     }
 
     @Override
     public String toString() {
-        return "Currency{" + "title=" + title + ", code=" + code + ", rate=" + rate + ", isOn=" + isOn + ", isBase=" + isBase + '}';
+        return "Currency{" + "title=" + title + ", code=" + code + ", rate=" + rate + ", isOn=" + on + ", isBase=" + base + '}';
     }
 
     @Override
