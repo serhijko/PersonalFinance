@@ -19,7 +19,7 @@ import org.ini4j.Wini;
  *
  * @author Serhij
  */
-public class Settings {
+final public class Settings {
     
     public static final File FONT_ROBOTO_LIGHT = new File("fonts/Roboto-Light.ttf");
     public static final File SAVE_DIR = new File("saves/");
