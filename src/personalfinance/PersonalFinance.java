@@ -9,10 +9,8 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import personalfinance.settings.Format;
 import personalfinance.settings.Settings;
 import personalfinance.settings.Text;
 
@@ -27,7 +25,6 @@ public class PersonalFinance {
      */
     public static void main(String[] args) {
         init();
-        System.out.println(Format.dateMonth(new Date()));
         //System.out.println(Text.get("PROGRAM_NAME"));
         //System.out.println(Arrays.toString(Text.getMonths()));
     }

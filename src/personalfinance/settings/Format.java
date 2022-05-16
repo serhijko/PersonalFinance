@@ -8,7 +8,6 @@ package personalfinance.settings;
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 import personalfinance.model.Currency;
 import personalfinance.model.Filter;
 
@@ -16,7 +15,7 @@ import personalfinance.model.Filter;
  *
  * @author Serhij
  */
-public class Format {
+final public class Format {
     
     public static String amount(double amount) {
         return String.format(Settings.FORMAT_AMOUNT, amount);
