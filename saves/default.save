@@ -8,8 +8,19 @@
             <rate>1.0</rate>
             <title>Рубль</title>
         </currency>
-        <startAmount>1000.0</startAmount>
-        <title>Кошелёк</title>
+        <startAmount>100000.0</startAmount>
+        <title>Депозит в банке (RUB)</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>false</base>
+            <code>USD</code>
+            <on>true</on>
+            <rate>63.5428</rate>
+            <title>Доллар</title>
+        </currency>
+        <startAmount>0.0</startAmount>
+        <title>Депозит в банке (USD)</title>
     </accounts>
     <accounts>
         <currency>
@@ -30,23 +41,9 @@
             <rate>1.0</rate>
             <title>Рубль</title>
         </currency>
-        <startAmount>100000.0</startAmount>
-        <title>Депозит в банке (RUB)</title>
+        <startAmount>1000.0</startAmount>
+        <title>Кошелёк</title>
     </accounts>
-    <accounts>
-        <currency>
-            <base>false</base>
-            <code>USD</code>
-            <on>true</on>
-            <rate>65.0</rate>
-            <title>Доллар</title>
-        </currency>
-        <startAmount>0.0</startAmount>
-        <title>Депозит в банке (USD)</title>
-    </accounts>
-    <articles>
-        <title>Продукты</title>
-    </articles>
     <articles>
         <title>ЖКХ</title>
     </articles>
@@ -54,10 +51,13 @@
         <title>Зарплата</title>
     </articles>
     <articles>
-        <title>Столовая</title>
+        <title>Продукты</title>
     </articles>
     <articles>
         <title>Проценты по депозиту</title>
+    </articles>
+    <articles>
+        <title>Столовая</title>
     </articles>
     <currencies>
         <base>true</base>
@@ -68,24 +68,24 @@
     </currencies>
     <currencies>
         <base>false</base>
-        <code>USD</code>
-        <on>true</on>
-        <rate>65.0</rate>
-        <title>Доллар</title>
+        <code>UAH</code>
+        <on>false</on>
+        <rate>2.1505</rate>
+        <title>Гривна</title>
     </currencies>
     <currencies>
         <base>false</base>
         <code>EUR</code>
         <on>false</on>
-        <rate>75.0</rate>
+        <rate>66.3644</rate>
         <title>Евро</title>
     </currencies>
     <currencies>
         <base>false</base>
-        <code>UAH</code>
-        <on>false</on>
-        <rate>2.5</rate>
-        <title>Гривна</title>
+        <code>USD</code>
+        <on>true</on>
+        <rate>63.5428</rate>
+        <title>Доллар</title>
     </currencies>
     <transactions>
         <account>
@@ -194,68 +194,30 @@
             <startAmount>0.0</startAmount>
             <title>Карта Visa</title>
         </account>
-        <amount>25000.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-04-18T08:58:41.642+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>100000.0</startAmount>
-            <title>Депозит в банке (RUB)</title>
-        </account>
-        <amount>1000.0</amount>
-        <article>
-            <title>Проценты по депозиту</title>
-        </article>
-        <date>2022-04-18T08:58:41.642+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-783.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-16T20:48:37.022+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-638.0</amount>
+        <amount>-731.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-05-13T21:41:06.128+03:00</date>
+        <date>2022-05-18T00:03:25.366+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-51.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-05-17T14:43:39.207+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -289,30 +251,11 @@
             <startAmount>0.0</startAmount>
             <title>Карта Visa</title>
         </account>
-        <amount>-119.0</amount>
+        <amount>-674.0</amount>
         <article>
             <title>Столовая</title>
         </article>
-        <date>2022-05-11T07:19:43.890+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-898.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-26T13:29:52.335+03:00</date>
+        <date>2022-05-17T06:57:37.853+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -327,182 +270,11 @@
             <startAmount>1000.0</startAmount>
             <title>Кошелёк</title>
         </account>
-        <amount>-24.0</amount>
+        <amount>-783.0</amount>
         <article>
             <title>Столовая</title>
         </article>
-        <date>2022-05-14T14:15:42.736+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-500.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-21T17:08:32.850+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-829.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-29T12:53:10.736+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-397.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-12T13:12:39.577+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-208.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-05T20:44:14.521+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-959.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-25T09:06:38.740+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-965.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-05-01T02:59:01.012+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-726.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-04-22T00:42:18.673+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-83.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-05-07T01:14:07.053+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-717.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-03T04:58:15.830+03:00</date>
+        <date>2022-05-16T20:48:37.022+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -536,106 +308,11 @@
             <startAmount>1000.0</startAmount>
             <title>Кошелёк</title>
         </account>
-        <amount>-340.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-30T03:14:40.904+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-275.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-26T02:54:21.947+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-870.0</amount>
+        <amount>-789.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-05-10T14:14:40.006+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-840.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-11T07:05:01.332+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-731.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-05-18T00:03:25.366+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-668.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-14T15:33:11.931+03:00</date>
+        <date>2022-05-15T08:13:07.320+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -669,87 +346,49 @@
             <startAmount>1000.0</startAmount>
             <title>Кошелёк</title>
         </account>
-        <amount>-986.0</amount>
+        <amount>-668.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-14T15:33:11.931+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-24.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-14T14:15:42.736+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-638.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-04-19T02:08:49.478+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-149.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-05-02T21:28:30.680+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-746.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-11T02:56:51.365+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-135.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-29T21:13:03.860+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-182.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-21T12:29:57.910+03:00</date>
+        <date>2022-05-13T21:41:06.128+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -764,239 +403,11 @@
             <startAmount>0.0</startAmount>
             <title>Карта Visa</title>
         </account>
-        <amount>-503.0</amount>
+        <amount>-397.0</amount>
         <article>
             <title>Столовая</title>
         </article>
-        <date>2022-05-05T09:46:01.221+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-252.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-07T13:49:41.274+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-524.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-03T00:42:27.859+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-568.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-04T07:27:16.384+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-968.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-28T17:39:08.949+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-667.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-05-04T12:35:29.740+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-186.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-03T00:13:30.581+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-716.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-10T01:42:40.148+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-773.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-05T00:30:29.690+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-998.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-04-29T05:40:07.244+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-276.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-05-10T01:08:29.597+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелёк</title>
-        </account>
-        <amount>-776.0</amount>
-        <article>
-            <title>Столовая</title>
-        </article>
-        <date>2022-04-27T14:34:22.364+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
-        </account>
-        <amount>-683.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-04-23T18:15:34.855+03:00</date>
+        <date>2022-05-12T13:12:39.577+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1030,11 +441,353 @@
             <startAmount>0.0</startAmount>
             <title>Карта Visa</title>
         </account>
+        <amount>-119.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-11T07:19:43.890+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-840.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-11T07:05:01.332+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-746.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-11T02:56:51.365+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-889.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-10T17:29:07.428+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-870.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-05-10T14:14:40.006+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-716.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-10T01:42:40.148+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-276.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-10T01:08:29.597+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
         <amount>-644.0</amount>
         <article>
             <title>Столовая</title>
         </article>
         <date>2022-05-09T12:27:21.725+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-252.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-07T13:49:41.274+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-83.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-05-07T01:14:07.053+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-208.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-05T20:44:14.521+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-503.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-05T09:46:01.221+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-773.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-05T00:30:29.690+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-667.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-05-04T12:35:29.740+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-568.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-04T07:27:16.384+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-717.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-03T04:58:15.830+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-524.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-03T00:42:27.859+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-186.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-05-03T00:13:30.581+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-149.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-05-02T21:28:30.680+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1065,14 +818,14 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта Visa</title>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
         </account>
-        <amount>-674.0</amount>
+        <amount>-965.0</amount>
         <article>
-            <title>Столовая</title>
+            <title>Продукты</title>
         </article>
-        <date>2022-05-17T06:57:37.853+03:00</date>
+        <date>2022-05-01T02:59:01.012+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1087,11 +840,11 @@
             <startAmount>1000.0</startAmount>
             <title>Кошелёк</title>
         </account>
-        <amount>-51.0</amount>
+        <amount>-990.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-05-17T14:43:39.207+03:00</date>
+        <date>2022-04-30T10:45:13.617+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1106,11 +859,30 @@
             <startAmount>1000.0</startAmount>
             <title>Кошелёк</title>
         </account>
-        <amount>-789.0</amount>
+        <amount>-340.0</amount>
         <article>
-            <title>Продукты</title>
+            <title>Столовая</title>
         </article>
-        <date>2022-05-15T08:13:07.320+03:00</date>
+        <date>2022-04-30T03:14:40.904+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-135.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-29T21:13:03.860+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1125,11 +897,49 @@
             <startAmount>0.0</startAmount>
             <title>Карта Visa</title>
         </account>
-        <amount>-889.0</amount>
+        <amount>-829.0</amount>
         <article>
             <title>Столовая</title>
         </article>
-        <date>2022-05-10T17:29:07.428+03:00</date>
+        <date>2022-04-29T12:53:10.736+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-998.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-04-29T05:40:07.244+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-968.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-28T17:39:08.949+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1163,11 +973,201 @@
             <startAmount>1000.0</startAmount>
             <title>Кошелёк</title>
         </account>
-        <amount>-990.0</amount>
+        <amount>-776.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-27T14:34:22.364+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-898.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-26T13:29:52.335+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-275.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-26T02:54:21.947+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-959.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-25T09:06:38.740+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>-683.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-04-30T10:45:13.617+03:00</date>
+        <date>2022-04-23T18:15:34.855+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-726.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-04-22T00:42:18.673+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-500.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-21T17:08:32.850+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-182.0</amount>
+        <article>
+            <title>Столовая</title>
+        </article>
+        <date>2022-04-21T12:29:57.910+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>1000.0</startAmount>
+            <title>Кошелёк</title>
+        </account>
+        <amount>-986.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-04-19T02:08:49.478+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Карта Visa</title>
+        </account>
+        <amount>25000.0</amount>
+        <article>
+            <title>Зарплата</title>
+        </article>
+        <date>2022-04-18T08:58:41.642+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>100000.0</startAmount>
+            <title>Депозит в банке (RUB)</title>
+        </account>
+        <amount>1000.0</amount>
+        <article>
+            <title>Проценты по депозиту</title>
+        </article>
+        <date>2022-04-18T08:58:41.642+03:00</date>
         <notice></notice>
     </transactions>
     <transfers>

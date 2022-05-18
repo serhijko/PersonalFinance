@@ -7,6 +7,7 @@ package personalfinance.saveload;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import personalfinance.exception.ModelException;
 import personalfinance.model.*;
@@ -187,6 +188,15 @@ public final class SaveData {
     @Override
     public String toString() {
         return "SaveData{" + "articles=" + articles + ", currencies=" + currencies + ", accounts=" + accounts + ", transactions=" + transactions + ", transfers=" + transfers + '}';
+    }
+    
+    public void updateCurrencies() throws Exception {
+        HashMap<String, Double> rates = RateCurrency.getRates(getBaseCurrency());
+        for (Currency c : currencies)
+            c.setRate(rates.get(c.getCode()));
+        for (Account a : accounts)
+            a.getCurrency().setRate(rates.get(a.getCurrency().getCode()));
+        
     }
     
 }

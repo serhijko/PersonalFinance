@@ -27,11 +27,13 @@ public class PersonalFinance {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
-    public static void main(String[] args) throws ModelException {
+    public static void main(String[] args) throws Exception {
         init();
         SaveData sd = SaveData.getInstance();
-        System.out.println(sd);
+        //sd.updateCurrencies();
+        System.out.println(sd.getCurrencies());
         //testModel();
     }
     
