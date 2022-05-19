@@ -8,6 +8,7 @@ package personalfinance.gui;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
@@ -15,7 +16,7 @@ import personalfinance.settings.Text;
  *
  * @author Serhij
  */
-public class MainFrame extends JFrame {
+public class MainFrame extends JFrame implements Refresh {
     
     private GridBagConstraints constraints;
     
@@ -41,6 +42,12 @@ public class MainFrame extends JFrame {
         //add leftpanel
         pack();
         setLocationRelativeTo(null);
+    }
+
+    @Override
+    public void refresh() {
+        SwingUtilities.updateComponentTreeUI(this);
+        pack();
     }
     
 }
