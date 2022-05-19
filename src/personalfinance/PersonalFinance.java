@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import personalfinance.exception.ModelException;
+import personalfinance.gui.MainFrame;
 import personalfinance.model.*;
 import personalfinance.saveload.SaveData;
 import personalfinance.settings.Settings;
@@ -31,9 +32,11 @@ public class PersonalFinance {
      */
     public static void main(String[] args) throws Exception {
         init();
+        MainFrame frame = new MainFrame();
+        frame.setVisible(true);
         SaveData sd = SaveData.getInstance();
         //sd.updateCurrencies();
-        System.out.println(sd.getCurrencies());
+        System.out.println(sd);
         //testModel();
     }
     
