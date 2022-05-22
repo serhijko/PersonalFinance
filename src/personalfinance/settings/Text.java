@@ -103,6 +103,10 @@ final public class Text {
         data.put("TOOLBAR_CURRENCIES", "Валюты");
         data.put("TOOLBAR_STATISTICS", "Статистика");
         
+        data.put("ADD", "Добавить");
+        data.put("EDIT", "Изменить");
+        data.put("DELETE", "Удалить");
+        
     }
     
 }

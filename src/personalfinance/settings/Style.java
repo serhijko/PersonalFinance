@@ -24,15 +24,7 @@ final public class Style {
     
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10);
-    
-    public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
-    public static final ImageIcon ICON_TOOLBAR_OVERVIEW = new ImageIcon("images/overview.png");
-    public static final ImageIcon ICON_TOOLBAR_ACCOUNTS = new ImageIcon("images/accounts.png");
-    public static final ImageIcon ICON_TOOLBAR_ARTICLES = new ImageIcon("images/articles.png");
-    public static final ImageIcon ICON_TOOLBAR_TRANSACTIONS = new ImageIcon("images/transactions.png");
-    public static final ImageIcon ICON_TOOLBAR_TRANSFERS = new ImageIcon("images/transfers.png");
-    public static final ImageIcon ICON_TOOLBAR_CURRENCIES = new ImageIcon("images/currencies.png");
-    public static final ImageIcon ICON_TOOLBAR_STATISTICS = new ImageIcon("images/statistics.png");
+    public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5, 5, 5);
     
     public static final ImageIcon ICON_MENU_FILE = new ImageIcon("images/menu_file.png");
     public static final ImageIcon ICON_MENU_EDIT = new ImageIcon("images/menu_edit.png");
@@ -58,5 +50,18 @@ final public class Style {
     public static final ImageIcon ICON_MENU_VIEW_STATISTICS = new ImageIcon("images/menu_view_statistics.png");
     
     public static final ImageIcon ICON_MENU_HELP_ABOUT = new ImageIcon("images/menu_help_about.png");
+    
+    public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
+    public static final ImageIcon ICON_TOOLBAR_OVERVIEW = new ImageIcon("images/overview.png");
+    public static final ImageIcon ICON_TOOLBAR_ACCOUNTS = new ImageIcon("images/accounts.png");
+    public static final ImageIcon ICON_TOOLBAR_ARTICLES = new ImageIcon("images/articles.png");
+    public static final ImageIcon ICON_TOOLBAR_TRANSACTIONS = new ImageIcon("images/transactions.png");
+    public static final ImageIcon ICON_TOOLBAR_TRANSFERS = new ImageIcon("images/transfers.png");
+    public static final ImageIcon ICON_TOOLBAR_CURRENCIES = new ImageIcon("images/currencies.png");
+    public static final ImageIcon ICON_TOOLBAR_STATISTICS = new ImageIcon("images/statistics.png");
+    
+    public static final ImageIcon ICON_ADD = new ImageIcon("images/add.png");
+    public static final ImageIcon ICON_EDIT = new ImageIcon("images/edit.png");
+    public static final ImageIcon ICON_DELETE = new ImageIcon("images/delete.png");
     
 }

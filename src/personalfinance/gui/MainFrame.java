@@ -20,7 +20,7 @@ import personalfinance.settings.Text;
  */
 public class MainFrame extends JFrame implements Refresh {
     
-    private GridBagConstraints constraints;
+    private final GridBagConstraints constraints;
     private final MainMenu mb;
     private final MainToolBar tb;
 
@@ -47,6 +47,7 @@ public class MainFrame extends JFrame implements Refresh {
         constraints.gridy = 1;
         constraints.gridwidth = 1;
         constraints.anchor = GridBagConstraints.NORTH;
+        
         //add leftpanel
         pack();
         setLocationRelativeTo(null);

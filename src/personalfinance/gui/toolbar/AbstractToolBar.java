@@ -8,6 +8,7 @@ package personalfinance.gui.toolbar;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 import personalfinance.gui.MainButton;
 import personalfinance.gui.Refresh;
 
@@ -17,7 +18,9 @@ import personalfinance.gui.Refresh;
  */
 abstract public class AbstractToolBar extends JPanel implements Refresh {
 
-    public AbstractToolBar() {
+    public AbstractToolBar(EmptyBorder border) {
+        super();
+        setBorder(border);
     }
     
     abstract protected void init();
