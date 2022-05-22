@@ -23,6 +23,7 @@ final public class Style {
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
     
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
+    public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10);
     
     public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
     public static final ImageIcon ICON_TOOLBAR_OVERVIEW = new ImageIcon("images/overview.png");
