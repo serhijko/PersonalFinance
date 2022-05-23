@@ -5,17 +5,18 @@
             <url>src/personalfinance/gui/MainButton.java</url>
             <bookmark id="1">
                 <name/>
-                <line>27</line>
+                <line>25</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Serhij/Documents/NetBeansProjects/PersonalFinance/src/personalfinance/gui/MainFileChooser.java</file>
             <file>file:/C:/Users/Serhij/Documents/NetBeansProjects/PersonalFinance/src/personalfinance/PersonalFinance.java</file>
             <file>file:/C:/Users/Serhij/Documents/NetBeansProjects/PersonalFinance/src/personalfinance/settings/Style.java</file>
-            <file>file:/C:/Users/Serhij/Documents/NetBeansProjects/PersonalFinance/src/personalfinance/gui/MainButton.java</file>
             <file>file:/C:/Users/Serhij/Documents/NetBeansProjects/PersonalFinance/src/personalfinance/gui/MainFrame.java</file>
+            <file>file:/C:/Users/Serhij/Documents/NetBeansProjects/PersonalFinance/src/personalfinance/settings/Text.java</file>
         </group>
     </open-files>
 </project-private>
