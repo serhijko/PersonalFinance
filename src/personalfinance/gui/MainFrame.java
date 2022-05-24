@@ -9,6 +9,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
+import personalfinance.gui.dialog.ErrorDialog;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
@@ -27,8 +28,7 @@ public class MainFrame extends JFrame implements Refresh {
     public MainFrame() {
         super(Text.get("PROGRAM_NAME"));
         
-        MainFileChooser fc = new MainFileChooser(this);
-        System.out.println(fc.save());
+        ErrorDialog.show(this, "Большая ошибка!!!");
         
         setResizable(false);
         setIconImage(Style.ICON_MAIN.getImage());

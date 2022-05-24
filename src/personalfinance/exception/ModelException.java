@@ -30,6 +30,7 @@ public class ModelException extends Exception {
         this.code = code;
     }
     
+    @Override
     public String getMessage() {
         switch (code) {
             case TITLE_EMPTY:

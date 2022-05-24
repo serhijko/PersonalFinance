@@ -54,6 +54,7 @@ final public class Text {
         data.put("NOVEMBER", "Ноябрь");
         data.put("DECEMBER", "Декабрь");
         
+        data.put("ERROR", "Ошибка");
         data.put("ERROR_TITLE_EMPTY", "Вы не ввели название!");
         data.put("ERROR_IS_EXISTS", "Такая запись уже существует");
         data.put("ERROR_DATE_FORMAT", "Некорректный формат даты!");

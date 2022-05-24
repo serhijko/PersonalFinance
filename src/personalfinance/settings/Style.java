@@ -7,7 +7,6 @@ package personalfinance.settings;
 
 import java.awt.Color;
 import java.awt.Font;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.border.EmptyBorder;
 
