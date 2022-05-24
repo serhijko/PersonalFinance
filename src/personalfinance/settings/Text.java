@@ -5,6 +5,7 @@
  */
 package personalfinance.settings;
 
+import java.util.Calendar;
 import java.util.HashMap;
 
 /**
@@ -129,6 +130,15 @@ final public class Text {
         data.put("FC_DATE", "Дата");
         data.put("FC_ATTR", "Атрибуты");
         data.put("FC_ALL_FILTER", "Все файлы");
+        
+        data.put("DIALOG_ABOUT_TITLE", "О программе");
+        data.put("ABOUT", "<body style='font-size: 100%; text-align: center; width: 350px;'>"
+                + "<h1>Домашняя бухгалтерия</h1><p><img src='file:images/main.png' /></p>"
+                + "<p>Данная программа была сделана в Видеокурсе<br />"
+                + "\"Создание крупного проекта на Java с Нуля\"<br />"
+                + "<a style='font-weight: bold;' href='https://srs.myrusakov.ru/javaproject'>https://srs.myrusakov.ru/javaproject</a></p>"
+                + "<p>С Уважением, Сергей Корнелюк!</p>"
+                + "<p>Copyright " + Calendar.getInstance().get(Calendar.YEAR) + " </p></body>");
         
     }
     
