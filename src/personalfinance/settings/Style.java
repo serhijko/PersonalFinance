@@ -6,7 +6,9 @@
 package personalfinance.settings;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.border.EmptyBorder;
 
@@ -21,10 +23,16 @@ final public class Style {
     
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
+    public static final Font FONT_DIALOG_LABEL = new Font("Roboto-Light", Font.BOLD, 12);
     
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5, 5, 5);
+    public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10, 10, 10);
+    
+    public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
+    
+    public static final int PADDING_DIALOG = 10;
     
     public static final ImageIcon ICON_MENU_FILE = new ImageIcon("images/menu_file.png");
     public static final ImageIcon ICON_MENU_EDIT = new ImageIcon("images/menu_edit.png");
@@ -66,5 +74,7 @@ final public class Style {
     public static final ImageIcon ICON_DATE = new ImageIcon("images/date.png");
     
     public static final ImageIcon ICON_ABOUT = new ImageIcon("images/menu_help_about.png");
+    public static final ImageIcon ICON_OK = new ImageIcon("images/ok.png");
+    public static final ImageIcon ICON_CANCEL = new ImageIcon("images/cancel.png");
     
 }
