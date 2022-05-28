@@ -9,7 +9,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-import personalfinance.gui.dialog.TransactionAddEditDialog;
+import personalfinance.gui.dialog.TransferAddEditDialog;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
@@ -28,7 +28,7 @@ public class MainFrame extends JFrame implements Refresh {
     public MainFrame() {
         super(Text.get("PROGRAM_NAME"));
         
-        new TransactionAddEditDialog(this).showDialog();
+        new TransferAddEditDialog(this).showDialog();
         
         setResizable(false);
         setIconImage(Style.ICON_MAIN.getImage());
