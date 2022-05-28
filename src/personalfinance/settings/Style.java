@@ -80,4 +80,8 @@ final public class Style {
     public static final ImageIcon ICON_TITLE = new ImageIcon("images/title.png");
     public static final ImageIcon ICON_CURRENCY = new ImageIcon("images/currency.png");
     public static final ImageIcon ICON_AMOUNT = new ImageIcon("images/amount.png");
+    public static final ImageIcon ICON_ACCOUNT = new ImageIcon("images/account.png");
+    public static final ImageIcon ICON_ARTICLE = new ImageIcon("images/article.png");
+    public static final ImageIcon ICON_NOTICE = new ImageIcon("images/notice.png");
+    
 }
