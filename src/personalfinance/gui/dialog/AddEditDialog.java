@@ -102,7 +102,7 @@ public abstract class AddEditDialog extends JDialog {
             JComponent component = entry.getValue();
             if (component instanceof JTextField) {
                 component.setPreferredSize(Style.DIMENSION_DIALOG_TEXTFIELD_SIZE);
-                if (values.containsKey(key)) ((JTextField) component).setText((String) values.get(key));
+                if (values.containsKey(key)) ((JTextField) component).setText("" + values.get(key));
             }
             else if (component instanceof JComboBox) {
                 if (values.containsKey(key)) ((JComboBox) component).setSelectedItem(values.get(key));
