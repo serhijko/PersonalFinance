@@ -37,6 +37,9 @@ public final class SaveData {
     public void load() {
         SaveLoad.load(this);
         sort();
+        for (Account a : accounts) {
+            a.setAmountFromTransactionsAndTransfers(transactions, transfers);
+        }
     }
 
     private void sort() {
