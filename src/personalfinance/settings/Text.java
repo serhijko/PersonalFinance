@@ -124,6 +124,10 @@ final public class Text {
         data.put("LABEL_FROM_AMOUNT", "Снято:");
         data.put("LABEL_TO_AMOUNT", "Зачислено:");
         data.put("LABEL_NOTICE", "Примечание:");
+        data.put("LABEL_CODE", "Код:");
+        data.put("LABEL_RATE", "Курс:");
+        data.put("LABEL_ON", "Включено:");
+        data.put("LABEL_BASE", "Базовая:");
         
         data.put("FC_OPEN", "Открыть");
         data.put("FC_SAVE", "Сохранить");
