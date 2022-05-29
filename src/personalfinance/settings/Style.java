@@ -40,7 +40,9 @@ final public class Style {
     
     public static final int PADDING_DIALOG = 10;
     public static final int PADDING_BALANCE = 3;
+    public static final int PADDING_PANEL = 3;
     public static final int PADDING_PANEL_BIG = 20;
+    public static final int PADDING_PANEL_EMPTY = 5;
     
     public static final ImageIcon ICON_MENU_FILE = new ImageIcon("images/menu_file.png");
     public static final ImageIcon ICON_MENU_EDIT = new ImageIcon("images/menu_edit.png");

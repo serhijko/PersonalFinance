@@ -6,7 +6,6 @@
 package personalfinance.gui.panel;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JComponent;
