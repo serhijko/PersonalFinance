@@ -40,6 +40,7 @@ abstract public class RightPanel extends AbstractPanel {
         this.title = title;
         this.icon = icon;
         this.panels = panels;
+        init();
     }
 
     public RightPanel(MainFrame frame, TableData td, String title, ImageIcon icon, AbstractToolBar tb) {
@@ -76,7 +77,7 @@ abstract public class RightPanel extends AbstractPanel {
     }
 
     @Override
-    protected void init() {
+    protected final void init() {
         enabledEditDelete();
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         JLabel header = new JLabel(Text.get(title));
