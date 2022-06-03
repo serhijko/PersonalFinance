@@ -153,7 +153,9 @@ final public class Text {
         data.put("FC_ALL_FILTER", "Все файлы");
         
         data.put("LAST_TRANSACTIONS", "Последние транзакции");
+        data.put("ACCOUNTS", "Счета");
         
+        data.put("TITLE", "Название");
         data.put("DATE", "Дата");
         data.put("ACCOUNT", "Счёт");
         data.put("ARTICLE", "Статья");

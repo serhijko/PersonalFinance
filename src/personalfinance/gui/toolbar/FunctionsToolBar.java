@@ -29,7 +29,7 @@ public final class FunctionsToolBar extends AbstractToolBar implements EnableEdi
     protected void init() {
         addButton(Text.get("ADD"), Style.ICON_ADD, HandlerCode.ADD, false);
         editButton = addButton(Text.get("EDIT"), Style.ICON_EDIT, HandlerCode.EDIT, false);
-        editButton = addButton(Text.get("DELETE"), Style.ICON_DELETE, HandlerCode.DELETE, false);
+        deleteButton = addButton(Text.get("DELETE"), Style.ICON_DELETE, HandlerCode.DELETE, false);
     }
 
     @Override

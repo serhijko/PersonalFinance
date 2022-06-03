@@ -5,10 +5,6 @@
  */
 package personalfinance.gui.table.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import personalfinance.model.Common;
 import personalfinance.model.Transaction;
 import personalfinance.saveload.SaveData;
 import personalfinance.settings.Format;
@@ -27,13 +23,11 @@ public class TransactionTableModel extends MainTableModel {
     private int count = -1;
 
     public TransactionTableModel(String[] columns) {
-        super(SaveData.getInstance().getFilterTransactions());
-        this.columns = new ArrayList<>(Arrays.asList(columns));
+        super(SaveData.getInstance().getFilterTransactions(), columns);
     }
 
     public TransactionTableModel(String[] columns, int count) {
-        super(SaveData.getInstance().getTransactionsOnCount(count));
-        this.columns = new ArrayList<>(Arrays.asList(columns));
+        super(SaveData.getInstance().getTransactionsOnCount(count), columns);
         this.count = count;
     }
 

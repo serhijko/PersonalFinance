@@ -6,6 +6,7 @@
 package personalfinance.gui.table.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 import personalfinance.gui.Refresh;
@@ -21,8 +22,9 @@ public abstract class MainTableModel extends AbstractTableModel implements Refre
     protected List<? extends Common> data;
     protected List<String> columns = new ArrayList<>();
 
-    public MainTableModel(List<? extends Common> data) {
+    public MainTableModel(List<? extends Common> data, String[] columns) {
         this.data = data;
+        this.columns = new ArrayList<>(Arrays.asList(columns));
     }
 
     @Override
