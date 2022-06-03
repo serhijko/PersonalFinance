@@ -31,7 +31,7 @@ public class TableHeaderIconRenderer extends DefaultTableCellRenderer {
         TableCellRenderer tcr = table.getTableHeader().getDefaultRenderer();
         Component renderer = tcr.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         label.setFont(renderer.getFont());
-        label.setBackground(renderer.getForeground());
+        label.setForeground(renderer.getForeground());
         label.setBorder(((JComponent) renderer).getBorder());
         label.setText("" + value);
         return label;

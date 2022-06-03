@@ -7,7 +7,6 @@ package personalfinance.gui.panel;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
-import personalfinance.gui.table.TableData;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,6 +17,7 @@ import javax.swing.event.ListSelectionListener;
 import personalfinance.gui.EnableEditDelete;
 import personalfinance.gui.MainFrame;
 import personalfinance.gui.Refresh;
+import personalfinance.gui.table.TableData;
 import personalfinance.gui.toolbar.AbstractToolBar;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
