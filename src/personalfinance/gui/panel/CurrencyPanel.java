@@ -18,7 +18,6 @@ public class CurrencyPanel extends RightPanel {
 
     public CurrencyPanel(MainFrame frame) {
         super(frame, new CurrencyTableData(), "CURRENCIES", Style.ICON_PANEL_CURRENCIES, new FunctionsToolBar());
-        init();
     }
     
 }
