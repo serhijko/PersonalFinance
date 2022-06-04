@@ -12,7 +12,7 @@ import javax.swing.SwingUtilities;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.panel.LeftPanel;
 import personalfinance.gui.panel.RightPanel;
-import personalfinance.gui.panel.TransactionPanel;
+import personalfinance.gui.panel.TransferPanel;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
@@ -57,7 +57,7 @@ public class MainFrame extends JFrame implements Refresh {
         leftPanel = new LeftPanel(this);
         add(leftPanel, constraints);
         
-        setRightPanel(new TransactionPanel(this));
+        setRightPanel(new TransferPanel(this));
         
         pack();
         setLocationRelativeTo(null);

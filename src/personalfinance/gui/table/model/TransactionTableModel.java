@@ -20,6 +20,7 @@ public class TransactionTableModel extends MainTableModel {
     private static final int ARTICLE = 2;
     private static final int AMOUNT = 3;
     private static final int NOTICE = 4;
+    
     private int count = -1;
 
     public TransactionTableModel(String[] columns) {
@@ -49,7 +50,7 @@ public class TransactionTableModel extends MainTableModel {
             case ARTICLE:
                 return transaction.getArticle().getTitle();
             case AMOUNT:
-                return transaction.getAmount();
+                return Format.amount(transaction.getAmount(), transaction.getAccount().getCurrency());
             case NOTICE:
                 return transaction.getNotice();
         }
