@@ -22,6 +22,8 @@ final public class Style {
     public static final Color COLOR_LEFTPANEL_BALANCE = Color.WHITE;
     public static final Color COLOR_EXP = new Color(200, 0, 0);
     public static final Color COLOR_INCOME = new Color(0, 100, 0);
+    public static final Color COLOR_ON = Color.BLACK;
+    public static final Color COLOR_OFF = new Color(170, 170, 170);
     
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
@@ -112,5 +114,6 @@ final public class Style {
     public static final ImageIcon ICON_PANEL_ACCOUNTS = new ImageIcon("images/accounts_panel.png");
     public static final ImageIcon ICON_PANEL_ARTICLES = new ImageIcon("images/articles_panel.png");
     public static final ImageIcon ICON_PANEL_TRANSFERS = new ImageIcon("images/transfers_panel.png");
+    public static final ImageIcon ICON_PANEL_CURRENCIES = new ImageIcon("images/currencies_panel.png");
     
 }

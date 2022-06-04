@@ -157,6 +157,7 @@ final public class Text {
         data.put("ARTICLES", "Статьи");
         data.put("TRANSACTIONS", "Транзакции");
         data.put("TRANSFERS", "Переводы");
+        data.put("CURRENCIES", "Валюты");
         
         data.put("TITLE", "Название");
         data.put("DATE", "Дата");
@@ -168,6 +169,10 @@ final public class Text {
         data.put("TO_ACCOUNT", "Куда");
         data.put("FROM_AMOUNT", "Снято");
         data.put("TO_AMOUNT", "Зачислено");
+        data.put("CODE", "Код");
+        data.put("RATE", "Курс");
+        data.put("ON", "Включено");
+        data.put("BASE", "Базовая");
         
         data.put("DIALOG_ABOUT_TITLE", "О программе");
         data.put("ABOUT", "<body style='font-size: 100%; text-align: center; width: 350px;'>"
