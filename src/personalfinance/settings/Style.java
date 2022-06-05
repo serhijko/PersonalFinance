@@ -34,12 +34,14 @@ final public class Style {
     public static final Font FONT_LABEL_LEFT_PANEL_AMOUNT = new Font("Roboto-Light", Font.PLAIN, 14);
     public static final Font FONT_TABLE_HEADER = new Font("Roboto-Light", Font.BOLD, 16);
     public static final Font FONT_TABLE = new Font("Roboto-Light", Font.PLAIN, 14);
+    public static final Font FONT_BUTTON_FILTER = new Font("Roboto-Light", Font.BOLD, 12);
     
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_LEFT_PANEL = new EmptyBorder(0, 10, 10, 10);
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5, 5, 5);
     public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10, 10, 10);
+    public static final EmptyBorder BORDER_FILTER_PANEL = new EmptyBorder(0, 0, 7, 0);
     
     public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
     public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
@@ -52,6 +54,7 @@ final public class Style {
     public static final int PADDING_PANEL_BIG = 20;
     public static final int PADDING_PANEL_EMPTY = 5;
     public static final int TABLE_ADD_ROW_HEIGHT = 18;
+    public static final int WIDTH_FILTER_BUTTON = 200;
     
     public static final ImageIcon ICON_MENU_FILE = new ImageIcon("images/menu_file.png");
     public static final ImageIcon ICON_MENU_EDIT = new ImageIcon("images/menu_edit.png");
@@ -112,6 +115,9 @@ final public class Style {
     
     public static final ImageIcon ICON_LEFT_PANEL_BALANCE_CURRENCIES = new ImageIcon("images/balance_currencies.png");
     public static final ImageIcon ICON_LEFT_PANEL_BALANCE = new ImageIcon("images/balance.png");
+    
+    public static final ImageIcon ICON_LEFT = new ImageIcon("images/left.png");
+    public static final ImageIcon ICON_RIGHT = new ImageIcon("images/right.png");
     
     public static final ImageIcon ICON_PANEL_OVERVIEW = new ImageIcon("images/overview_panel.png");
     public static final ImageIcon ICON_PANEL_TRANSACTIONS = new ImageIcon("images/transactions_panel.png");
