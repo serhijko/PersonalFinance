@@ -8,6 +8,7 @@ package personalfinance.settings;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.border.EmptyBorder;
 
@@ -76,6 +77,9 @@ final public class Style {
     public static final ImageIcon ICON_MENU_VIEW_STATISTICS = new ImageIcon("images/menu_view_statistics.png");
     
     public static final ImageIcon ICON_MENU_HELP_ABOUT = new ImageIcon("images/menu_help_about.png");
+    
+    public static final Icon ICON_MENU_POPUP_EDIT = new ImageIcon("images/menu_popup_edit.png");
+    public static final Icon ICON_MENU_POPUP_DELETE = new ImageIcon("images/menu_popup_delete.png");
     
     public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
     public static final ImageIcon ICON_TOOLBAR_OVERVIEW = new ImageIcon("images/overview.png");
