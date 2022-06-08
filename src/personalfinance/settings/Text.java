@@ -174,6 +174,8 @@ final public class Text {
         data.put("ON", "Включено");
         data.put("BASE", "Базовая");
         
+        data.put("CHART_NO_DATA", "Нет данных за выбранный период!");
+        
         data.put("DIALOG_ABOUT_TITLE", "О программе");
         data.put("ABOUT", "<body style='font-size: 100%; text-align: center; width: 350px;'>"
                 + "<h1>Домашняя бухгалтерия</h1><p><img src='file:images/main.png' /></p>"
