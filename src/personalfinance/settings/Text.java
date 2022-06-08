@@ -158,6 +158,7 @@ final public class Text {
         data.put("TRANSACTIONS", "Транзакции");
         data.put("TRANSFERS", "Переводы");
         data.put("CURRENCIES", "Валюты");
+        data.put("STATISTICS", "Статистика");
         
         data.put("TITLE", "Название");
         data.put("DATE", "Дата");
@@ -174,6 +175,8 @@ final public class Text {
         data.put("ON", "Включено");
         data.put("BASE", "Базовая");
         
+        data.put("CHART_INCOME", "Доходы по статьям");
+        data.put("CHART_EXP", "Расходы по статьям");
         data.put("CHART_NO_DATA", "Нет данных за выбранный период!");
         
         data.put("DIALOG_ABOUT_TITLE", "О программе");
