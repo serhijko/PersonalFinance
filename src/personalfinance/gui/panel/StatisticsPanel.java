@@ -5,11 +5,9 @@
  */
 package personalfinance.gui.panel;
 
-import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import personalfinance.gui.Chart;
 import personalfinance.gui.MainFrame;
-import personalfinance.gui.table.TableData;
 import personalfinance.model.Statistics;
 import personalfinance.saveload.SaveData;
 import personalfinance.settings.Style;
@@ -28,6 +26,7 @@ public class StatisticsPanel extends RightPanel {
         super(frame, null, "STATISTICS", Style.ICON_PANEL_STATISTICS,
                 new JPanel[]{
                     new FilterPanel(frame),
+                    new StatisticsTypePanel(frame, "CHART_INCOME"),
                     new Chart(Statistics.getDataForChartOnIncomeArticles(), "CHART_INCOME", SaveData.getInstance().getBaseCurrency().getCode()).getPanel()
                 });
     }
@@ -51,6 +50,7 @@ public class StatisticsPanel extends RightPanel {
         }
         setPanels(new JPanel[]{
                     new FilterPanel(frame),
+                    new StatisticsTypePanel(frame, title),
                     chart.getPanel()
                 });
         super.refresh();
