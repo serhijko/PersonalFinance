@@ -68,6 +68,10 @@ final public class Text {
         data.put("ERROR_NO_BASE_CURRENCY", "Необходима базовая валюта!"
                 + " Установите сначала этот параметр в другой валюте, "
                 + "потом он снимется автоматически.");
+        data.put("ERROR_UPDATE_CURRENCIES", "Ошибка при обновлении курсов валют!");
+        
+        data.put("CONFIRM_EXIT_TEXT", "Вы действительно хотите выйти? Все несохранённые данные будут потеряны!");
+        data.put("CONFIRM_EXIT_TITLE", "Подтверждение выхода");
         
         data.put("YES", "Да");
         data.put("NO", "Нет");
