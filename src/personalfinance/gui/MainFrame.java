@@ -12,7 +12,6 @@ import javax.swing.SwingUtilities;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.panel.LeftPanel;
 import personalfinance.gui.panel.RightPanel;
-import personalfinance.gui.panel.StatisticsPanel;
 import personalfinance.gui.panel.TransactionPanel;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
@@ -85,6 +84,10 @@ public class MainFrame extends JFrame implements Refresh {
         panel.setBorder(Style.BORDER_PANEL);
         add(rightPanel, constraints);
         pack();
+    }
+
+    public RightPanel getRightPanel() {
+        return rightPanel;
     }
     
 }

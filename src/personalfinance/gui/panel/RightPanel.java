@@ -110,5 +110,9 @@ abstract public class RightPanel extends AbstractPanel {
             });
         }
     }
+
+    public TableData getTableData() {
+        return td;
+    }
     
 }

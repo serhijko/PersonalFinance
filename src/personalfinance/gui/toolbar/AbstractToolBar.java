@@ -11,6 +11,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 import personalfinance.gui.MainButton;
 import personalfinance.gui.Refresh;
+import personalfinance.gui.handler.Handler;
 
 /**
  *
@@ -18,15 +19,18 @@ import personalfinance.gui.Refresh;
  */
 abstract public class AbstractToolBar extends JPanel implements Refresh {
 
-    public AbstractToolBar(EmptyBorder border) {
+    private final Handler handler;
+
+    public AbstractToolBar(EmptyBorder border, Handler handler) {
         super();
+        this.handler = handler;
         setBorder(border);
     }
     
     abstract protected void init();
     
     protected MainButton addButton(String title, ImageIcon icon, String action, boolean topIcon) {
-        MainButton button = new MainButton(title, icon, null, action);
+        MainButton button = new MainButton(title, icon, handler, action);
         if (topIcon) {
             button.setHorizontalTextPosition(SwingConstants.CENTER);
             button.setVerticalTextPosition(SwingConstants.BOTTOM);

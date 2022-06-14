@@ -72,6 +72,8 @@ final public class Text {
         
         data.put("CONFIRM_EXIT_TEXT", "Вы действительно хотите выйти? Все несохранённые данные будут потеряны!");
         data.put("CONFIRM_EXIT_TITLE", "Подтверждение выхода");
+        data.put("CONFIRM_DELETE_TEXT", "Вы уверены, что хотите удалить данную запись?");
+        data.put("CONFIRM_DELETE_TITLE", "Подтверждение удаления");
         
         data.put("YES", "Да");
         data.put("NO", "Нет");
