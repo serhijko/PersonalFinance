@@ -25,12 +25,14 @@ import personalfinance.settings.Text;
  */
 public abstract class TableData extends JTable implements Refresh {
     
+    private final FunctionsHandler handler;
     private final TablePopupMenu popup;
     private final String[] columns;
     private final ImageIcon[] icons;
 
     public TableData(MainTableModel model, FunctionsHandler handler, String[] columns, ImageIcon[] icons) {
         super(model);
+        this.handler = handler;
         this.popup = new TablePopupMenu();
         this.columns = columns;
         this.icons = icons;
@@ -82,6 +84,10 @@ public abstract class TableData extends JTable implements Refresh {
     
     protected void init() {
         
+    }
+
+    public FunctionsHandler getFunctionsHandler() {
+        return handler;
     }
     
 }

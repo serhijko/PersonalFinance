@@ -89,15 +89,15 @@ public class FunctionsHandler extends Handler implements MouseListener, KeyListe
         frame.refresh();
     }
 
-    private void add() {
+    public void add() {
         showAddEditDialog(null);
     }
 
-    private void edit() {
+    public void edit() {
         showAddEditDialog(getSelectedCommon());
     }
 
-    private void delete() {
+    public void delete() {
         Common c = getSelectedCommon();
         if (c != null) {
             int result = ConfirmDialog.show(frame, "CONFIRM_DELETE_TEXT", "CONFIRM_DELETE_TITLE");

@@ -16,6 +16,7 @@ import personalfinance.gui.EnableEditDelete;
 import personalfinance.gui.MainFrame;
 import personalfinance.gui.Refresh;
 import personalfinance.gui.handler.Handler;
+import personalfinance.gui.handler.MenuEditHandler;
 import personalfinance.gui.handler.MenuFileHandler;
 import personalfinance.settings.HandlerCode;
 import personalfinance.settings.Style;
@@ -54,7 +55,7 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
         add(help);
         
         MenuFileHandler fileHandler = new MenuFileHandler(frame);
-        MenuFileHandler editHandler = new MenuFileHandler(frame);
+        MenuEditHandler editHandler = new MenuEditHandler(frame);
         MenuFileHandler viewHandler = new MenuFileHandler(frame);
         MenuFileHandler helpHandler = new MenuFileHandler(frame);
         
