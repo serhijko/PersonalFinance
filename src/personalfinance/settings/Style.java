@@ -47,7 +47,7 @@ final public class Style {
     public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
     public static final Dimension DIMENSION_PADDING_BALANCE = new Dimension(10, 0);
     public static final Dimension DIMENSION_TABLE_SHOW_SIZE = new Dimension(850, 450);
-    public static final Dimension DIMENSION_CHART = new Dimension(1068, 550);
+    public static final Dimension DIMENSION_CHART = new Dimension(868, 550);
     
     public static final int PADDING_DIALOG = 10;
     public static final int PADDING_BALANCE = 3;
