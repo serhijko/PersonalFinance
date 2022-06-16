@@ -9,6 +9,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
+import personalfinance.gui.handler.MainToolBarHandler;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.panel.LeftPanel;
 import personalfinance.gui.panel.OverviewPanel;
@@ -21,7 +22,7 @@ import personalfinance.settings.Text;
  *
  * @author Serhij
  */
-public class MainFrame extends JFrame implements Refresh {
+public final class MainFrame extends JFrame implements Refresh {
     
     private final GridBagConstraints constraints;
     private final MainMenu mb;
@@ -47,7 +48,7 @@ public class MainFrame extends JFrame implements Refresh {
         constraints.gridy = 0;
         constraints.gridwidth = 2;
         
-        tb = new MainToolBar();
+        tb = new MainToolBar(new MainToolBarHandler(this));
         add(tb, constraints);
         
         constraints.gridy = 1;
