@@ -5,8 +5,6 @@
  */
 package personalfinance.exception;
 
-import personalfinance.settings.Text;
-
 /**
  *
  * @author Serhij
