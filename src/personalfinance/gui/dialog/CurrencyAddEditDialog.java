@@ -56,7 +56,7 @@ public class CurrencyAddEditDialog extends AddEditDialog {
     }
 
     @Override
-    protected Common getCommonFromForm() throws ModelException {
+    public Common getCommonFromForm() throws ModelException {
         try {
             String title = ((JTextField) components.get("LABEL_TITLE")).getText();
             String code = (String) ((JComboBox) components.get("LABEL_CODE")).getSelectedItem();
@@ -68,7 +68,7 @@ public class CurrencyAddEditDialog extends AddEditDialog {
             if (((JComboBox) components.get("LABEL_BASE")).getSelectedItem().equals(Text.get("YES")))
                 isBase = true;
             if (!isBase && c != null && ((Currency) c).isBase()) throw new ModelException(ModelException.NO_BASE_CURRENCY);
-            Currency currency = (Currency) ((CommonComboBox) components.get("LABEL_CURRENCY")).getSelectedItem();
+            // Currency currency = (Currency) ((CommonComboBox) components.get("LABEL_CURRENCY")).getSelectedItem();
             return new Currency(title, code, Format.fromAmountToNumber(rate), isOn, isBase);
         } catch (NumberFormatException ex) {
             throw new ModelException(ModelException.AMOUNT_FORMAT);
