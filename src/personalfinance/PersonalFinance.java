@@ -34,9 +34,9 @@ public class PersonalFinance {
         init();
         MainFrame frame = new MainFrame();
         frame.setVisible(true);
-        SaveData sd = SaveData.getInstance();
+        //SaveData sd = SaveData.getInstance();
         //sd.updateCurrencies();
-        System.out.println(sd);
+        //System.out.println(sd);
         //testModel();
     }
     
