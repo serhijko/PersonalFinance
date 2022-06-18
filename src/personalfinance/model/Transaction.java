@@ -21,12 +21,12 @@ public class Transaction extends Common {
     private String notice;
     private Date date;
     
-    public Transaction() {
-    }
+    public Transaction() {}
 
     public Transaction(Account account, Article article, double amount, String notice, Date date) throws ModelException {
         if (account == null) throw new ModelException(ModelException.ACCOUNT_EMPTY);
         if (article == null) throw new ModelException(ModelException.ARTICLE_EMPTY);
+        if (date == null) throw new ModelException(ModelException.DATE_FORMAT);
         this.account = account;
         this.article = article;
         this.amount = amount;
@@ -107,9 +107,8 @@ public class Transaction extends Common {
     }
 
     private void setAmounts(SaveData sd) {
-        for (Account a : sd.getAccounts()) {
+        for (Account a : sd.getAccounts())
             a.setAmountFromTransactionsAndTransfers(sd.getTransactions(), sd.getTransfers());
-        }
     }
     
 }

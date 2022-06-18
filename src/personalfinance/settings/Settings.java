@@ -82,6 +82,7 @@ final public class Settings {
         try {
             Wini ini = new Wini(FILE_SETTINGS);
             if (FILE_SAVE != null) ini.put("Settings", "FILE_SAVE", FILE_SAVE.getAbsolutePath().replace("\\", "\\\\"));
+            ini.put("Settings", "LANGUAGE", LANGUAGE);
             ini.store();
         } catch (IOException ex) {
             Logger.getLogger(Settings.class.getName()).log(Level.SEVERE, null, ex);

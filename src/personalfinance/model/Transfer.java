@@ -28,6 +28,7 @@ public class Transfer extends Common {
         if (fromAccount == null) throw new ModelException(ModelException.ACCOUNT_EMPTY);
         if (toAccount == null) throw new ModelException(ModelException.ACCOUNT_EMPTY);
         if (fromAmount < 0 || toAmount < 0) throw new ModelException(ModelException.AMOUNT_FORMAT);
+        if (date == null) throw new ModelException(ModelException.DATE_FORMAT);
         this.fromAccount = fromAccount;
         this.toAccount = toAccount;
         this.fromAmount = fromAmount;
@@ -117,9 +118,8 @@ public class Transfer extends Common {
     }
 
     private void setAmounts(SaveData sd) {
-        for (Account a : sd.getAccounts()) {
+        for (Account a : sd.getAccounts())
             a.setAmountFromTransactionsAndTransfers(sd.getTransactions(), sd.getTransfers());
-        }
     }
     
 }

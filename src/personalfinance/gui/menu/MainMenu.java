@@ -21,6 +21,7 @@ import personalfinance.gui.handler.Handler;
 import personalfinance.gui.handler.MenuEditHandler;
 import personalfinance.gui.handler.MenuFileHandler;
 import personalfinance.gui.handler.MenuHelpHandler;
+import personalfinance.gui.handler.MenuSettingsHandler;
 import personalfinance.gui.handler.MenuViewHandler;
 import personalfinance.settings.HandlerCode;
 import personalfinance.settings.Settings;
@@ -31,7 +32,7 @@ import personalfinance.settings.Text;
  *
  * @author Serhij
  */
-public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
+public class MainMenu extends JMenuBar implements EnableEditDelete {
     
     private JMenuItem menuEdit;
     private JMenuItem menuDelete;
@@ -65,7 +66,7 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
         MenuFileHandler fileHandler = new MenuFileHandler(frame);
         MenuEditHandler editHandler = new MenuEditHandler(frame);
         MenuViewHandler viewHandler = new MenuViewHandler(frame);
-        MenuHelpHandler settingsHandler = new MenuHelpHandler(frame);
+        MenuSettingsHandler settingsHandler = new MenuSettingsHandler(frame);
         MenuHelpHandler helpHandler = new MenuHelpHandler(frame);
         
         addMenuItem(file, fileHandler, Text.get("MENU_FILE_NEW"), Style.ICON_MENU_FILE_NEW, HandlerCode.MENU_FILE_NEW, KeyEvent.VK_N);
@@ -105,8 +106,8 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
         menuRussian.setActionCommand(HandlerCode.MENU_SETTINGS_LANGUAGE_RUSSIAN);
         menuEnglish.setActionCommand(HandlerCode.MENU_SETTINGS_LANGUAGE_ENGLISH);
         
-        //menuRussian.addActionListener(settingsHandler);
-        //menuEnglish.addActionListener(settingsHandler);
+        menuRussian.addActionListener(settingsHandler);
+        menuEnglish.addActionListener(settingsHandler);
         
         if (Settings.getLanguage().equals("ru")) menuRussian.setSelected(true);
         else if (Settings.getLanguage().equals("en")) menuEnglish.setSelected(true);
@@ -131,12 +132,6 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
     
     private JMenuItem addMenuItem(JMenu menu, Handler listener, String title, ImageIcon icon, String action) {
         return addMenuItem(menu, listener, title, icon, action, 0);
-    }
-
-    @Override
-    public void refresh() {
-        removeAll();
-        init();
     }
 
     @Override

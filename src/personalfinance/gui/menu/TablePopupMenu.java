@@ -29,8 +29,7 @@ public class TablePopupMenu extends JPopupMenu implements Refresh {
 
     @Override
     public void refresh() {
-        throw new UnsupportedOperationException("Not supported yet.");
-        //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     private void init() {
@@ -45,6 +44,7 @@ public class TablePopupMenu extends JPopupMenu implements Refresh {
         
         editItem.setIcon(Style.ICON_MENU_POPUP_EDIT);
         deleteItem.setIcon(Style.ICON_MENU_POPUP_DELETE);
+        
         add(editItem);
         add(deleteItem);
     }
