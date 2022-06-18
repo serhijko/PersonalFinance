@@ -60,6 +60,7 @@ final public class Style {
     public static final ImageIcon ICON_MENU_FILE = new ImageIcon("images/menu_file.png");
     public static final ImageIcon ICON_MENU_EDIT = new ImageIcon("images/menu_edit.png");
     public static final ImageIcon ICON_MENU_VIEW = new ImageIcon("images/menu_view.png");
+    public static final ImageIcon ICON_MENU_SETTINGS = new ImageIcon("images/menu_settings.png");
     public static final ImageIcon ICON_MENU_HELP = new ImageIcon("images/menu_help.png");
     
     public static final ImageIcon ICON_MENU_FILE_NEW = new ImageIcon("images/menu_file_new.png");
@@ -79,6 +80,10 @@ final public class Style {
     public static final ImageIcon ICON_MENU_VIEW_TRANSFERS = new ImageIcon("images/menu_view_transfers.png");
     public static final ImageIcon ICON_MENU_VIEW_CURRENCIES = new ImageIcon("images/menu_view_currencies.png");
     public static final ImageIcon ICON_MENU_VIEW_STATISTICS = new ImageIcon("images/menu_view_statistics.png");
+    
+    public static final ImageIcon ICON_MENU_SETTINGS_LANGUAGE = new ImageIcon("images/menu_settings_language.png");
+    public static final ImageIcon ICON_MENU_SETTINGS_LANGUAGE_RUSSIAN = new ImageIcon("images/menu_settings_language_russian.png");
+    public static final ImageIcon ICON_MENU_SETTINGS_LANGUAGE_ENGLISH = new ImageIcon("images/menu_settings_language_english.png");
     
     public static final ImageIcon ICON_MENU_HELP_ABOUT = new ImageIcon("images/menu_help_about.png");
     

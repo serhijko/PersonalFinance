@@ -58,7 +58,7 @@ final public class Text {
 
             data.put("ERROR", "Ошибка");
             data.put("ERROR_TITLE_EMPTY", "Вы не ввели название!");
-            data.put("ERROR_IS_EXISTS", "Такая запись уже существует");
+            data.put("ERROR_IS_EXISTS", "Такая запись уже существует!");
             data.put("ERROR_DATE_FORMAT", "Некорректный формат даты!");
             data.put("ERROR_CODE_EMPTY", "Вы не указали код!");
             data.put("ERROR_CURRENCY_EMPTY", "Вы не выбрали валюту!");
@@ -82,6 +82,7 @@ final public class Text {
             data.put("MENU_FILE", "Файл");
             data.put("MENU_EDIT", "Правка");
             data.put("MENU_VIEW", "Вид");
+            data.put("MENU_SETTINGS", "Настройки");
             data.put("MENU_HELP", "Помощь");
 
             data.put("MENU_FILE_NEW", "Новый");
@@ -101,6 +102,10 @@ final public class Text {
             data.put("MENU_VIEW_TRANSFERS", "Переводы");
             data.put("MENU_VIEW_CURRENCIES", "Валюты");
             data.put("MENU_VIEW_STATISTICS", "Статистика");
+            
+            data.put("MENU_SETTINGS_LANGUAGE", "Язык");
+            data.put("MENU_SETTINGS_LANGUAGE_RUSSIAN", "Русский");
+            data.put("MENU_SETTINGS_LANGUAGE_ENGLISH", "Английский");
 
             data.put("MENU_HELP_ABOUT", "О программе");
 
@@ -235,6 +240,7 @@ final public class Text {
             data.put("MENU_FILE", "File");
             data.put("MENU_EDIT", "Edit");
             data.put("MENU_VIEW", "View");
+            data.put("MENU_SETTINGS", "Settings");
             data.put("MENU_HELP", "Help");
 
             data.put("MENU_FILE_NEW", "New");
@@ -250,10 +256,14 @@ final public class Text {
             data.put("MENU_VIEW_OVERVIEW", "Overview");
             data.put("MENU_VIEW_ACCOUNTS", "Accounts");
             data.put("MENU_VIEW_ARTICLES", "Articles");
-            data.put("MENU_VIEW_CURRENCIES", "Currencies");
             data.put("MENU_VIEW_TRANSACTIONS", "Transactions");
             data.put("MENU_VIEW_TRANSFERS", "Transfers");
+            data.put("MENU_VIEW_CURRENCIES", "Currencies");
             data.put("MENU_VIEW_STATISTICS", "Statistics");
+            
+            data.put("MENU_SETTINGS_LANGUAGE", "Language");
+            data.put("MENU_SETTINGS_LANGUAGE_RUSSIAN", "Russian");
+            data.put("MENU_SETTINGS_LANGUAGE_ENGLISH", "English");
 
             data.put("MENU_HELP_ABOUT", "About");
 
@@ -313,9 +323,9 @@ final public class Text {
             data.put("LAST_TRANSACTIONS", "Last transactions");
             data.put("ACCOUNTS", "Accounts");
             data.put("ARTICLES", "Articles");
+            data.put("CURRENCIES", "Currencies");
             data.put("TRANSACTIONS", "Transactions");
             data.put("TRANSFERS", "Transfers");
-            data.put("CURRENCIES", "Currencies");
             data.put("STATISTICS", "Statistics");
 
             data.put("TITLE", "Title");

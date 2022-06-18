@@ -7,10 +7,12 @@ package personalfinance.gui.menu;
 
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
+import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
 import personalfinance.gui.EnableEditDelete;
 import personalfinance.gui.MainFrame;
@@ -21,6 +23,7 @@ import personalfinance.gui.handler.MenuFileHandler;
 import personalfinance.gui.handler.MenuHelpHandler;
 import personalfinance.gui.handler.MenuViewHandler;
 import personalfinance.settings.HandlerCode;
+import personalfinance.settings.Settings;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
@@ -44,21 +47,25 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
         JMenu file = new JMenu(Text.get("MENU_FILE"));
         JMenu edit = new JMenu(Text.get("MENU_EDIT"));
         JMenu view = new JMenu(Text.get("MENU_VIEW"));
+        JMenu settings = new JMenu(Text.get("MENU_SETTINGS"));
         JMenu help = new JMenu(Text.get("MENU_HELP"));
         
         file.setIcon(Style.ICON_MENU_FILE);
         edit.setIcon(Style.ICON_MENU_EDIT);
         view.setIcon(Style.ICON_MENU_VIEW);
+        settings.setIcon(Style.ICON_MENU_SETTINGS);
         help.setIcon(Style.ICON_MENU_HELP);
         
         add(file);
         add(edit);
         add(view);
+        add(settings);
         add(help);
         
         MenuFileHandler fileHandler = new MenuFileHandler(frame);
         MenuEditHandler editHandler = new MenuEditHandler(frame);
         MenuViewHandler viewHandler = new MenuViewHandler(frame);
+        MenuHelpHandler settingsHandler = new MenuHelpHandler(frame);
         MenuHelpHandler helpHandler = new MenuHelpHandler(frame);
         
         addMenuItem(file, fileHandler, Text.get("MENU_FILE_NEW"), Style.ICON_MENU_FILE_NEW, HandlerCode.MENU_FILE_NEW, KeyEvent.VK_N);
@@ -82,6 +89,30 @@ public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
         addMenuItem(view, viewHandler, Text.get("MENU_VIEW_STATISTICS"), Style.ICON_MENU_VIEW_STATISTICS, HandlerCode.MENU_VIEW_STATISTICS);
         
         addMenuItem(help, helpHandler, Text.get("MENU_HELP_ABOUT"), Style.ICON_MENU_HELP_ABOUT, HandlerCode.MENU_HELP_ABOUT);
+        
+        JMenu language = new JMenu(Text.get("MENU_SETTINGS_LANGUAGE"));
+        language.setIcon(Style.ICON_MENU_SETTINGS_LANGUAGE);
+        settings.add(language);
+        
+        ButtonGroup group = new ButtonGroup();
+        JRadioButtonMenuItem menuRussian = new JRadioButtonMenuItem(Text.get("MENU_SETTINGS_LANGUAGE_RUSSIAN"));
+        JRadioButtonMenuItem menuEnglish = new JRadioButtonMenuItem(Text.get("MENU_SETTINGS_LANGUAGE_ENGLISH"));
+        group.add(menuRussian);
+        group.add(menuEnglish);
+        
+        menuRussian.setIcon(Style.ICON_MENU_SETTINGS_LANGUAGE_RUSSIAN);
+        menuEnglish.setIcon(Style.ICON_MENU_SETTINGS_LANGUAGE_ENGLISH);
+        menuRussian.setActionCommand(HandlerCode.MENU_SETTINGS_LANGUAGE_RUSSIAN);
+        menuEnglish.setActionCommand(HandlerCode.MENU_SETTINGS_LANGUAGE_ENGLISH);
+        
+        //menuRussian.addActionListener(settingsHandler);
+        //menuEnglish.addActionListener(settingsHandler);
+        
+        if (Settings.getLanguage().equals("ru")) menuRussian.setSelected(true);
+        else if (Settings.getLanguage().equals("en")) menuEnglish.setSelected(true);
+        
+        language.add(menuRussian);
+        language.add(menuEnglish);
         
     }
     
