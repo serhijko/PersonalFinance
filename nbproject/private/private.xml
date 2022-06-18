@@ -2,18 +2,18 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
         <file>
-            <url>src/personalfinance/gui/table/CurrencyTableData.java</url>
-            <bookmark id="2">
-                <name/>
-                <line>42</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
             <url>src/personalfinance/gui/MainButton.java</url>
             <bookmark id="1">
                 <name/>
                 <line>25</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/personalfinance/gui/table/CurrencyTableData.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>42</line>
                 <key/>
             </bookmark>
         </file>

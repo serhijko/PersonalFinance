@@ -39,12 +39,16 @@ final public class Settings {
     
     private static File FILE_SAVE = new File("saves/default.save");
     
+    private static String LANGUAGE = "ru";
+    
     public static void init() {
         try {
             if (!FILE_SETTINGS.exists()) FILE_SETTINGS.createNewFile(); Ini ini = new Ini(FILE_SETTINGS);
             Preferences prefs = new IniPreferences(ini);
             String file = prefs.node("Settings").get("FILE_SAVE", null);
             if (file != null) FILE_SAVE = new File(file);
+            String language = prefs.node("Settings").get("LANGUAGE", null);
+            if (language != null) LANGUAGE = language;
             setLocale();
         } catch (IOException ex) {
             Logger.getLogger(Settings.class.getName()).log(Level.SEVERE, null, ex);
@@ -56,12 +60,22 @@ final public class Settings {
     }
 
     public static void setFileSave(File file) {
-        Settings.FILE_SAVE = file;
+        FILE_SAVE = file;
+        save();
+    }
+
+    public static String getLanguage() {
+        return LANGUAGE;
+    }
+
+    public static void setLanguage(String language) {
+        LANGUAGE = language;
+        setLocale();
         save();
     }
 
     private static void setLocale() {
-        Locale.setDefault(new Locale("ru"));
+        Locale.setDefault(new Locale(LANGUAGE));
     }
 
     private static void save() {
