@@ -34,6 +34,7 @@ public class MenuSettingsHandler extends Handler {
             }
         }
         Text.init();
+        frame.getMenu().refresh();
         super.actionPerformed(ae);
     }
     

@@ -71,7 +71,6 @@ public final class MainFrame extends JFrame implements Refresh {
     @Override
     public void refresh() {
         SwingUtilities.updateComponentTreeUI(this);
-        //mb.refresh();
         tb.refresh();
         leftPanel.refresh();
         rightPanel.refresh();

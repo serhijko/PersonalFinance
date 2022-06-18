@@ -123,15 +123,18 @@ public class Currency extends Common {
     @Override
     public void postEdit(SaveData sd) {
         clearBase(sd);
-        for (Account account : sd.getAccounts()) {
-            if (account.getCurrency().equals(sd.getOldCommon())) account.setCurrency(this);
+        for (Currency c : sd.getCurrencies()) {
+            for (Account account : sd.getAccounts()) {
+                if (account.getCurrency().equals(c)) account.setCurrency(c);
+            }
             for (Transaction transaction : sd.getTransactions())
-                if (transaction.getAccount().getCurrency().equals(sd.getOldCommon())) transaction.getAccount().setCurrency(this);
+                if (transaction.getAccount().getCurrency().equals(c)) transaction.getAccount().setCurrency(c);
             for (Transfer transfer : sd.getTransfers()) {
-                if (transfer.getFromAccount().getCurrency().equals(sd.getOldCommon())) transfer.getFromAccount().setCurrency(this);
-                if (transfer.getToAccount().getCurrency().equals(sd.getOldCommon())) transfer.getToAccount().setCurrency(this);
+                if (transfer.getFromAccount().getCurrency().equals(c)) transfer.getFromAccount().setCurrency(c);
+                if (transfer.getToAccount().getCurrency().equals(c)) transfer.getToAccount().setCurrency(c);
             }
         }
+        
     }
 
     private void clearBase(SaveData sd) {

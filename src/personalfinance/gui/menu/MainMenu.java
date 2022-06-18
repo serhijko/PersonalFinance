@@ -32,7 +32,7 @@ import personalfinance.settings.Text;
  *
  * @author Serhij
  */
-public class MainMenu extends JMenuBar implements EnableEditDelete {
+public class MainMenu extends JMenuBar implements Refresh, EnableEditDelete {
     
     private JMenuItem menuEdit;
     private JMenuItem menuDelete;
@@ -138,6 +138,12 @@ public class MainMenu extends JMenuBar implements EnableEditDelete {
     public void setEnabledEditDelete(boolean enable) {
         menuEdit.setEnabled(enable);
         menuDelete.setEnabled(enable);
+    }
+
+    @Override
+    public void refresh() {
+        removeAll();
+        init();
     }
     
 }
